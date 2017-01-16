@@ -1,0 +1,25 @@
+OASISFormat: 0.4
+Name:        pusher
+Version:     0.1.0
+Synopsis:    OCaml interface to the Pusher HTTP API
+Authors:     Rizo Isrof
+Maintainers: Rizo Isrof <rizo@odis.io>
+Homepage:    https://github.com/rizo/pusher-http-ocaml
+License:     MIT
+Plugins:     META (0.4), DevFiles (0.4)
+BuildTools:  ocamlbuild
+
+Description:
+  OCaml interface to the Pusher HTTP API.
+
+Library pusher
+  Path:           src
+  Modules:        Pusher
+  CompiledObject: best
+  BuildDepends:
+    pure,
+    cohttp,
+    cohttp.lwt,
+    yojson,
+    lwt
+

@@ -1,0 +1,8 @@
+PKG yojson
+PKG pure
+PKG nocrypto
+PKG hex
+
+S src
+B _build/src
+
